@@ -2,7 +2,8 @@
 
 ## Data
 Predicting final sales price of houses using 79 explanatory variables describing almost every aspect of residential homes in Ames, Iowa, downloaded from the [Kaggle website](https://www.kaggle.com/c/house-prices-advanced-regression-techniques).
-### Data Files
+
+**Data Files**:
 - ***data/train.csv***: the training set
 - ***data/test.csv***: the test set
 - ***data/data_description.txt***: full description of each variable
