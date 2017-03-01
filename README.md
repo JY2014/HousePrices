@@ -1,5 +1,9 @@
 # Predicting House Prices: Advanced Regression
 
+This project attempts to predict sales prices for residential homes using information such as physical structure, location and condition of the home, in order to guide the estimation of individual house prices and assist the studies on housing market trends.  
+
+___
+
 ## Data
 Predicting final sales price of houses using 79 explanatory variables describing almost every aspect of residential homes in Ames, Iowa, downloaded from the [Kaggle website](https://www.kaggle.com/c/house-prices-advanced-regression-techniques).
 
@@ -9,14 +13,13 @@ Predicting final sales price of houses using 79 explanatory variables describing
 - ***data/data_description.txt***: full description of each variable
 
 ## Summary of Analysis
-My analysis includes the following steps
-- Imputation on the missing values 
-- Data transformation and cleaning
-- Prediction using multiple models
-- Ensemble learning on the model results
+My analysis includes the following steps (python code in the ipynb files):
+- Imputation on the missing values: *Data Cleaning and Imputation.ipynb* 
+- Data transformation and cleaning: *Data Cleaning and Imputation.ipynb*
+- Prediction using multiple models: *Prediction.ipynb, Prediction_PCA.ipynb, XGBoost.ipynb, XGBoost_PCA.ipynb*
+- Ensemble learning on the model results: *Model_Ensemble.ipynb*
 
-## Imputation on Missing Values
-(***Data Cleaning and Imputation.ipynb***)
+## 1. Imputation on Missing Values
 
 About 30 predictor variables contain missing values.
 
@@ -30,8 +33,7 @@ About 30 predictor variables contain missing values.
     - Quantitative variable: better model between lasso or ridge regression (regularization parameter tuned)
     - Categorical variable: logistic regression (regularization parameter tuned)
 
-## Data Transformation and Cleaning
-(***Data Cleaning and Imputation.ipynb***)
+## 2. Data Transformation and Cleaning
 
 1. **Response Variable**:
 
@@ -46,8 +48,7 @@ About 30 predictor variables contain missing values.
     - if includes a lot of zero values, a binary variable was added to indicate zero vs non-zero.
 
 
-## Prediction
-(***Prediction.ipynb, Prediction_PCA.ipynb, XGBoost.ipynb, XGBoost_PCA.ipynb***)
+## 3. Prediction
 
 Multiple regressing models were applied to predict the log-transformed sales price using the predictors:
 
@@ -58,8 +59,7 @@ Multiple regressing models were applied to predict the log-transformed sales pri
 
 Since the predictor variables are highly correlated, transformation of the predictors using principal component analysis was also examined. However, the PCA transformed data did not yield better prediction.  
 
-## Ensemble Learning
-(***Model_Ensemble.ipynb***)
+## 4. Ensemble Learning
 
 The prediction of each model on both the training and testing sets was saved from the previous step. 
 - Training set: cross-validation prediction
@@ -91,6 +91,6 @@ Root Mean Squared Logarithmic Error (RMSLE) is used to evaluate each model.
 |Random Forest|   0.1219  |
 |  XGBoost    | **0.1180**|
 
-### Conclusion
-- Lasso regression and XGBoost in general perform well on this dataset;
+### Summary
+- Lasso regression and XGBoost in general perform the best on this dataset;
 - Ensemble learning is able to boost the prediction precision by integrating individual models.
