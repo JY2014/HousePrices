@@ -2,7 +2,6 @@
 
 This project attempts to predict sales prices for residential homes using information such as physical structure, location and condition of the home, in order to guide the estimation of individual house prices and assist the studies on housing market trends.  
 
-___
 
 ## Data
 Predicting final sales price of houses using 79 explanatory variables describing almost every aspect of residential homes in Ames, Iowa, downloaded from the [Kaggle website](https://www.kaggle.com/c/house-prices-advanced-regression-techniques).
@@ -14,10 +13,10 @@ Predicting final sales price of houses using 79 explanatory variables describing
 
 ## Summary of Analysis
 My analysis includes the following steps (python code in the ipynb files):
-- Imputation on the missing values: *Data Cleaning and Imputation.ipynb* 
-- Data transformation and cleaning: *Data Cleaning and Imputation.ipynb*
-- Prediction using multiple models: *Prediction.ipynb, Prediction_PCA.ipynb, XGBoost.ipynb, XGBoost_PCA.ipynb*
-- Ensemble learning on the model results: *Model_Ensemble.ipynb*
+- Imputation on the missing values: ***Data Cleaning and Imputation.ipynb***
+- Data transformation and cleaning: ***Data Cleaning and Imputation.ipynb***
+- Prediction using multiple models: ***Prediction.ipynb, Prediction_PCA.ipynb, XGBoost.ipynb, XGBoost_PCA.ipynb***
+- Ensemble learning on the model results: ***Model_Ensemble.ipynb***
 
 ## 1. Imputation on Missing Values
 
