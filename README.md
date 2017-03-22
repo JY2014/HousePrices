@@ -23,6 +23,7 @@ My analysis includes the following steps (python code in the ipynb files):
 About 30 predictor variables contain missing values.
 
 <center><b>Figure 1. Percentage Missingness of Predictors with Missing Values</b></center>
+
 ![Missing data](https://cloud.githubusercontent.com/assets/9686980/23108119/59b8e322-f6d6-11e6-9eba-8d8a6c988190.JPG)
 
 **Steps**:
@@ -39,6 +40,7 @@ About 30 predictor variables contain missing values.
     Since the price is highly right skewed, log-transformation was employed to transform the variable. 
     
  <center><b>Figure 2. Log-transformation on the response variable (sales price)</b></center>   
+
 ![transformation](https://cloud.githubusercontent.com/assets/9686980/23108947/2caadd2a-f6e2-11e6-9eac-df6160682a67.JPG)
 
 2. **Quantitative Predictors**:
